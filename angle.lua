@@ -2,7 +2,7 @@ local VisualizePosition = function(Position)
 	local Part = Instance.new("Part")
 	Part.Position = Position
 	Part.CanCollide = false
-	Part.Parent = workspace
+	Part.Parent = workspace.Filter
 	Part.Size = Vector3.new(0.1,0.1,0.1)
 	Part.Anchored = true
 end
