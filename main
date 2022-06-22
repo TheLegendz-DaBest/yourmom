@@ -4,8 +4,8 @@ Filter.Name = "Filter"
 Filter.Parent = workspace
 
 local ActivePlayers = Instance.new('Folder')
-Filter.Name = "ActivePlayers"
-Filter.Parent = workspace
+ActivePlayers.Name = "ActivePlayers"
+ActivePlayers.Parent = workspace
 
 
 function Add()
