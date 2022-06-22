@@ -78,7 +78,7 @@ Funcs.FindBestAngle = function(Model, Enemy, EnemyTool)
 	
 	local Params = RaycastParams.new()
 	Params.FilterType = Enum.RaycastFilterType.Blacklist
-	Params.FilterDescendantsInstances = {Model, workspace.Filter, EnemyTool, table.unpack(Enemy.Humanoid:GetAccessories()), workspace.Map}
+	Params.FilterDescendantsInstances = {Model, workspace.Filter, EnemyTool, table.unpack(Enemy.Humanoid:GetAccessories())}
 	
 	local Raycasts = {}
 	table.insert(Raycasts, {workspace:Raycast(Model["Right Arm"].Position, Model.PrimaryPart.CFrame.LookVector*10, Params), 0})
